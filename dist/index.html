@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Likha Atelier | Aesthetic Arts and Crafts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ats.css">
+</head>
+<body class="locked">
+<canvas id="petals" aria-hidden="true"></canvas>
+<div id="glow" aria-hidden="true"></div>
+<div id="curtain" aria-hidden="true"><i></i><i></i></div>
+
+<!-- LOGIN -->
+<div id="login">
+  <form id="lform" class="lcard" autocomplete="off">
+    <svg viewBox="0 0 48 48" width="64" height="64" class="spin-slow" aria-label="Likha Atelier logo"><path d="M24 3 45 24 24 45 3 24Z" fill="#b5546b"/><path d="M24 12 36 24 24 36 12 24Z" fill="#d6a84f"/><path d="M24 19 29 24 24 29 19 24Z" fill="#1f3d2b"/></svg>
+    <h1>Likha Atelier</h1>
+    <p class="sub">Aesthetic Arts &amp; Crafts · Sign in to open the gallery</p>
+    <label>Username<input id="user" required placeholder="Enter username"></label>
+    <label for="pass">Password</label>
+    <div class="password-field">
+      <input id="pass" type="password" required placeholder="Enter password" autocomplete="current-password">
+      <button id="toggle-pass" class="password-toggle" type="button" aria-label="Show password" aria-pressed="false" title="Show password">
+        <svg class="eye-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+      </button>
+    </div>
+    <p id="lerr" role="alert"></p>
+    <button class="btn" type="submit">Unlock the Magic --></button>
+  </form>
+</div>
+
+<header id="top">
+  <a class="brand" href="#home" data-go="home"><svg viewBox="0 0 48 48" width="34" height="34"><path d="M24 3 45 24 24 45 3 24Z" fill="#b5546b"/><path d="M24 12 36 24 24 36 12 24Z" fill="#d6a84f"/><path d="M24 19 29 24 24 29 19 24Z" fill="#1f3d2b"/></svg><span>Likha Atelier</span></a>
+  <nav id="nav"></nav>
+  <button id="voice-toggle" type="button" aria-pressed="false" title="Play audio guide for this section">▶ Listen</button>
+  <button id="music-toggle" type="button" aria-pressed="false" title="Play cool music">♫ Music off</button>
+  <button id="out" title="Log out">⎋</button>
+</header>
+
+<main>
+<section id="home" class="page active">
+  <div class="banner">
+    <div class="frame f1 tilt" id="fr1"></div><div class="frame f2 tilt" id="fr2"></div><div class="frame f3 tilt" id="fr3"></div>
+    <div class="btext">
+      <p class="eyebrow">Welcome to the World of Art</p>
+      <h1 id="title" aria-label="Likha Atelier">Likha Atelier</h1>
+      <p class="lead">“Likha” means <em>creation</em>. Module 2: <b>Aesthetic Arts and Crafts</b>.</p>
+      <a class="btn" href="#about" data-go="about">Begin the Journey --></a>
+    </div>
+  </div>
+  <div class="wrap">
+    <h2>What Will You Discover?</h2>
+    <p>Welcome! Here you will learn where <b>aesthetics</b> and <b>craft</b> come from, meet <b>William Morris</b>, explore five families of crafts, decode the principles of design, and test yourself with games. Explore original illustrations and real craft photographs throughout the site.</p>
+    <div class="cards" id="homecards"></div>
+  </div>
+</section>
+
+<section id="about" class="page"><div class="wrap">
+  <h2>Understanding Art: Aesthetics vs. Craft</h2>
+  <div class="two">
+    <div class="reveal"><div class="art tilt" data-art="pattern"></div><p class="cap">“Leaf &amp; Vine”: original illustration inspired by Arts and Crafts patterns. Meaning: beauty grows from repeated, patient design.</p></div>
+    <div class="reveal">
+      <h3>Aesthetics: the study of beauty</h3>
+      <p>From the Greek <i>eisthesis</i>, “perception.” Aesthetics is a branch of philosophy devoted to the study of art and beauty. The term was used in the 18th century by the German philosopher <b>Alexander Baumgarten</b>. It also refers to the principles governing the nature and appreciation of beauty, especially in visual art (Rader, 1979).</p>
+      <h3>Craft: skill of the hand</h3>
+      <p>From the German <i>Kraft</i>, “power” or “ability.” Craft applies human skill through the hand. It produces things for human purposes, and shows its prettiness around a goal external to the object itself (Dutton, 1990).</p>
+    </div>
+  </div>
+  <div class="cards reveal">
+    <div class="card"><h4> Aesthetic Art</h4><p>Valued mainly to be perceived and appreciated for its beauty and meaning.</p></div>
+    <div class="card"><h4> Craft</h4><p>Valued for skill, speed and patience, made for a purpose such as wearing, sitting, storing or decorating.</p></div>
+    <div class="card"><h4> Where they meet</h4><p>A hand-woven cloth is useful <em>and</em> beautiful. Good craft is art with a job.</p></div>
+  </div>
+  <h3>The Arts and Crafts Movement &amp; William Morris</h3>
+  <p class="reveal">Arts and crafts started in the 19th century in Europe as a design reform and social movement initiated by <b>William Morris</b>. It involves making things that require a combination of skill, speed and patience. Morris (born March 24, 1834, Walthamstow, England; died October 3, 1896, London, aged 62) was known for pattern designs on fabrics and wallpapers. A proponent of socialist ideals, he believed a designer should master every medium, producing intricate, intertwining fruit, flower and foliage patterns.</p>
+  <blockquote class="reveal">“Have nothing in your houses that you do not know to be useful, or believe to be beautiful.”<cite>William Morris, <i>The Beauty of Life</i> (1880)</cite></blockquote>
+</div></section>
+
+<section id="crafts" class="page"><div class="wrap">
+  <h2>Types of Arts and Crafts</h2>
+  <p>Artists have unique skills and perceptive abilities, but also needs and motivation. Creating works their audience accepts brings social acceptance and recognition, and those works make pleasing environments. There are five families of crafts. Choose one:</p>
+  <div class="tabs" id="ctabs"></div>
+  <div id="cpanel" class="cpanel"></div>
+</div></section>
+
+<section id="design" class="page"><div class="wrap">
+  <h2>Principles of Design and Composition</h2>
+  <p>Art principles are created by combining art elements. Artists use organizing principles to develop forms that inform. To analyze or compose artwork, you must understand how they work (Elsen, 1981). <b>Tap a card to flip it.</b></p>
+  <div class="cards" id="pgrid"></div>
+  <h2>Motivated Functions of Art</h2>
+  <p>Motivated purposes are the intentional, conscious aims of the creator: to bring political change, comment on society, convey a mood, address psychology, sell a product, or simply communicate.</p>
+  <div class="cards" id="fgrid"></div>
+</div></section>
+
+<section id="gallery" class="page"><div class="wrap">
+  <h2>Art Gallery: Explore the Artworks</h2>
+  <p>Click an artwork or photo to learn its story. The original illustrations were created by our group; craft photos are credited with their sources and licenses.</p>
+  <div class="cards" id="ggrid"></div>
+</div></section>
+<div id="modal" class="modal"><div class="mbox"><button id="mclose" aria-label="Close">✕</button><div id="mart" class="art"></div><div id="mtext"></div></div></div>
+
+<section id="artist" class="page"><div class="wrap">
+  <h2>Artist Spotlight: William Morris</h2>
+  <div class="two">
+    <div><div class="art photo"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/William_Morris_age_53.jpg/500px-William_Morris_age_53.jpg" alt="Portrait of William Morris at age 53, photographed by Frederick Hollyer around 1887" loading="lazy"></div><p class="cap">William Morris, photographed by Frederick Hollyer around 1887. <a href="https://commons.wikimedia.org/wiki/File:William_Morris_age_53.jpg" target="_blank" rel="noopener noreferrer">Image source and public-domain details</a>.</p></div>
+    <div>
+      <p class="eyebrow">English designer · 1834–1896</p>
+      <p><b>Biography:</b> Born March 24, 1834 in Walthamstow, England; died October 3, 1896 in London at age 62.</p>
+      <p><b>Notable works:</b> Pattern designs for fabrics and wallpapers, with intricate intertwining fruit, flower and foliage motifs.</p>
+      <p><b>Contribution:</b> He initiated the Arts and Crafts movement as a design reform and social movement, and held that a designer should master the skills of any medium.</p>
+      <p><b>Module link:</b> His wallpapers show <i>pattern and repetition</i>, <i>rhythm</i>, <i>harmony</i> and <i>symmetrical balance</i>, and prove that functional objects can be art.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="games" class="page"><div class="wrap">
+  <h2>Interactive Zone: Play, Solve, and Learn</h2>
+  <div class="tabs" id="gtabs"></div>
+  <div id="g-quiz" class="gpanel"><p class="how">Answer all 8 questions, then press <b>Check Answers</b>.</p><div id="qbox"></div><button class="btn" id="qcheck">Check Answers</button><p id="qscore" class="score"></p></div>
+  <div id="g-memory" class="gpanel"><p class="how"> Flip two cards to match each craft with its meaning. Fewer moves is better!</p><div id="mem"></div><p id="mscore" class="score"></p></div>
+  <div id="g-prin" class="gpanel"><p class="how"> Read the clue and name the design principle.</p><h3 id="pclue" class="bigitem"></h3><div id="pbtns" class="tabs"></div><p id="pscore" class="score"></p></div>
+</div></section>
+
+<section id="reflect" class="page"><div class="wrap">
+  <h2>Art Appreciation Reflection</h2>
+  <blockquote>“Have nothing in your houses that you do not know to be useful, or believe to be beautiful.”<cite>William Morris, <i>The Beauty of Life</i> (1880)</cite></blockquote>
+  <p><b>What we learned:</b> Aesthetics studies beauty, while craft is skill of the hand. Together they explain why a woven cloth, a carved spoon or a folded crane can move us. We learned five craft families, nine design principles and five motivated functions of art.</p>
+  <p><b>Why it matters:</b> Crafts carry skill, patience and culture. Appreciating them honors the makers.</p>
+  <p><b>Everyday life:</b> Art is in the clothes we wear, the furniture we use and the cards we give. Noticing design makes ordinary things richer.</p>
+</div></section>
+
+<section id="refs" class="page"><div class="wrap">
+  <h2>References and Image Credits</h2>
+  <h3>Sources (APA 7th edition)</h3>
+  <ul id="reflist" class="refs"></ul>
+  <h3>Image and media credits</h3>
+  <p>The logo, animations, and illustrated artworks are <b>original creations made with HTML, CSS and JAVASRIPT</b> by our group. “Leaf &amp; Vine” is <b>inspired by</b> the foliage patterns of William Morris; our interpretation: repetition and rhythm make nature feel orderly and calm. Selected craft photographs are from Wikimedia Commons; each gallery story links to the photographer, source, and license.</p>
+</div></section>
+
+<section id="team" class="page"><div class="wrap">
+  <h2>Meet the Creators</h2>
+  <div class="cards" id="team-grid"></div>
+  <h3>Our Instructor</h3>
+  <div class="cards" id="inst-grid"></div>
+</div></section>
+</main>
+<footer>Likha Atelier · Art Appreciation Group Project · Made by hand, with code ✦</footer>
+<script src="node.js"></script>
+</body>
+</html>

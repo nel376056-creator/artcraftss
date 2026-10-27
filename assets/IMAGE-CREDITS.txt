@@ -1,0 +1,81 @@
+Locally bundled photographs
+===========================
+
+The site loads these photo files from assets/images/ so the photos remain
+available when the project is deployed. Source and license links are retained
+in the site's Gallery details.
+
+woven-loom.jpg
+  Hattersley power loom — Ad Meskens — CC BY-SA 4.0
+  https://commons.wikimedia.org/wiki/File:Hattersley_Power_Loom_03_(cropped).jpg
+
+tree-rings.jpg
+  Tree rings — Arnoldius — CC BY-SA 2.5
+  https://commons.wikimedia.org/wiki/File:Tree_rings.jpg
+
+blacksmith.jpg
+  Blacksmith and visitor at a smithy — Wasapl — CC BY-SA 3.0
+  https://commons.wikimedia.org/wiki/File:3_tourist_helping_artist_blacksmith_in_finland.JPG
+
+origami-crane.jpg
+  Origami paper crane — Kinori — Public domain
+  https://commons.wikimedia.org/wiki/File:Orizuru.jpg
+
+rose.jpg
+  Rose — User:Agguizar — Public domain
+  https://commons.wikimedia.org/wiki/File:Rose.jpg
+
+morris-gallery.jpg
+  William Morris Gallery — ProfDEH — CC BY-SA 4.0
+  https://commons.wikimedia.org/wiki/File:William_Morris_Gallery-001_crop.JPG
+
+mosaic.jpg
+  Mosaic detail — Plicata — Public domain
+  https://commons.wikimedia.org/wiki/File:Mosaic.jpg
+
+pottery-wheel.jpg
+  Pottery wheel — Oriel — Public domain
+  https://commons.wikimedia.org/wiki/File:Pottenbakkersschijf.JPG
+
+croatian-embroidery.jpg
+  Croatian embroidery — OttawaAC — CC BY 3.0
+  https://commons.wikimedia.org/wiki/File:Croatian_embroidery.jpg
+
+sunset.jpg
+  Sunset near Gründau, Germany — Ygrek — Public domain
+  https://commons.wikimedia.org/wiki/File:Sunset.jpg
+
+tatting-lace.jpg
+  Tatted lace butterfly — Franz van Duns — CC BY-SA 4.0
+  https://commons.wikimedia.org/wiki/File:2021-03-21_DSG0835_butterfly-shaped_handiwork_in_tatting_technique_(high_resolution).jpg
+
+shoemaking-tools.jpg
+  Shoes and shoemaking tools — Orce Wiki — CC BY-SA 4.0
+  https://commons.wikimedia.org/wiki/File:Shoes_and_shoe_making_tools_-_Macedonian_shoemaking_craft.jpg
+
+woodcarving-workshop.jpg
+  Wood carving workshop — Curved.kiwix — CC BY-SA 4.0
+  https://commons.wikimedia.org/wiki/File:Carving_wood_workshop.jpg
+
+historic-cabinetry.jpg
+  Historic furniture — Carolus — CC BY-SA 3.0
+  https://commons.wikimedia.org/wiki/File:Interieur_Sierkunst.JPG
+
+digital-scrapbook.jpg
+  Digital scrapbook page — MamaGeek — CC BY-SA 3.0
+  https://commons.wikimedia.org/wiki/File:DigitalScrapbookPage.jpg
+
+rubber-stamps.jpg
+  Rotating collection of rubber stamps — Carl Steinbeisser — Public domain
+  https://commons.wikimedia.org/wiki/File:Stempelkarussel.JPG
+
+paper-quilling.jpg
+  Paper quilling flowers — Inna Dorman — CC BY-SA 3.0
+  https://commons.wikimedia.org/wiki/File:Quilled_flowers_sample_quilling_picture.jpg
+
+william-morris.jpg
+  William Morris portrait, photographed by Frederick Hollyer — Public domain
+  https://commons.wikimedia.org/wiki/File:William_Morris_age_53.jpg
+
+The SVG illustrations and flying origami animation are original inline artwork
+in node.js; they do not require separate image downloads.
