@@ -121,11 +121,11 @@ function pcard(id,name,role,c,asset){
  const avatar=image?`<img src="${image}" alt="${name}" loading="lazy" decoding="async">`:asset?`<img src="assets/images/${asset}" alt="${name}" loading="lazy" decoding="async">`:av(id,c);
  return `<div class="card pcard"><div class="avatar" id="av-${id}">${avatar}</div><div class="nm" contenteditable id="nm-${id}">${savedName||name}</div><p class="small" contenteditable id="rl-${id}">${savedRole||role}</p></div>`
 }
-const TEAM=[['m1','Group Member 1 Full Name','Role: Lead Designer','#b5546b','member1.jpg'],['m2','Group Member 2 Full Name','Role: Developer','#2f6f6a','member2.jpg'],['m3','Group Member 3 Full Name','Role: Researcher','#d6a84f','member3.jpg'],['m4','Group Member 4 Full Name','Role: Writer','#1f3d2b','member4.jpg'],['m5','Group Member 5 Full Name','Role: Illustrator','#8c5c9e','member5.jpg'],['m6','Group Member 6 Full Name','Role: Presenter','#dbdf22','member6.jpg'],['m7','Group Member 7 Full Name','Role: Presenter','#2f6f6a','member7.jpg']];
+const TEAM=[['m1','Espinosa, Niel','Role: Lead Designer','#b5546b','member1.jpg'],['m2','Canda, Shiela Mae','Role: Developer','#2f6f6a','member2.jpg'],['m3','Gupit, Oswald McSunday ','Role: Researcher','#d6a84f','member3.jpg'],['m4','Patayon, Ravilyn ','Role: Writer','#1f3d2b','member4.jpg'],['m5','Magsanay, Jhonfrixter','Role: Illustrator','#8c5c9e','member5.jpg'],['m6','Cordovez, Estrelita','Role: Presenter','#dbdf22','member6.jpg'],['m7','Salazar, John Dale','Role: Presenter','#2f6f6a','member7.jpg']];
 function initTeam(){
  if(initTeam.done)return;
  $('#team-grid').innerHTML=TEAM.map(t=>pcard(...t)).join('');
- $('#inst-grid').innerHTML=pcard('inst','[Ask your instructor for their complete name]','Art Appreciation Instructor','#6b4a8c','member8.jpg');
+ $('#inst-grid').innerHTML=pcard('inst','Orejas, Benedict','Art Appreciation Instructor','#6b4a8c','member8.jpg');
  $$('.pcard').forEach(card=>{
   $$('[contenteditable]',card).forEach(el=>el.oninput=()=>store.set(el.id,el.textContent));
  });
